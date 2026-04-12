@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUV - RUN CODE</title>
+    <link rel="shortcut icon" href="https://onepagelove.com/favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #f5f7fa;
+            color: #111827;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .code-container {
+            background: #ffffff;
+            border: 1px solid rgba(0, 0, 0, 0.08);
+            border-radius: 14px;
+            padding: 24px;
+            max-width: 700px;
+            width: 100%;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo {
+            width: 48px;
+            height: 48px;
+        }
+
+        .brand h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 20px;
+            color: #eb3656;
+            letter-spacing: 1px;
+            font-weight: 700;
+        }
+
+        .float { animation: float 3s ease-in-out infinite; }
+        @keyframes float { 0%,100%{transform:translateY(0);} 50%{transform:translateY(-8px);} }
+
+
+        pre {
+            background: #f3f4f6;
+            border-radius: 10px;
+            padding: 16px;
+            font-family: monospace;
+            font-size: 0.95rem;
+            word-break: break-word;
+            /* wrap long words */
+            white-space: pre-wrap;
+            /* wrap lines instead of horizontal scroll */
+            text-align: left;
+            overflow-x: hidden;
+            /* hide horizontal scroll */
+        }
+
+        .copy-btn {
+            background: #eb3656;
+            color: #fff;
+            border: none;
+            padding: 8px 18px;
+            border-radius: 10px;
+            font-weight: 600;
+            cursor: pointer;
+            margin: 12px 0;
+            transition: all 0.25s ease;
+        }
+
+        .copy-btn:hover {
+            background: #d02b4b;
+            transform: translateY(-2px);
+        }
+
+        .bookmark-instruction {
+            font-size: 0.95rem;
+            color: #374151;
+            margin-bottom: 12px;
+            text-align: left;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="code-container">
+        <div class="brand">
+            <div class="logo float">
+                <img src="https://i.ibb.co/6CyKYR0/logo.png" alt="">
+            </div>
+            <h1>LUV SCRIPTS</h1>
+        </div>
+
+        <!-- Instruction Text -->
+        <p class="bookmark-instruction">
+            🌟 Add this code as a bookmark
+        </p>
+        <p class="bookmark-instruction">
+            🌟 <a href="">Click here to watch video</a>
+        </p>
+        <!-- Copy Button -->
+        <button class="copy-btn" id="copyBtn">Click to Copy Code</button>
+        <pre id="codeBlock">javascript:(()=&gt;{if(document.getElementById(&#34;__my_loader__&#34;))return;const d=document,b=d.body,l=d.createElement(&#34;div&#34;);l.id=&#34;__my_loader__&#34;;l.style=&#34;position:fixed;inset:0;background:rgba(0,0,0,.8);display:flex;align-items:center;justify-content:center;z-index:999999&#34;;const c=d.createElement(&#34;div&#34;);c.style=&#34;width:60px;height:60px;border:6px solid rgba(255,255,255,.2);border-top:6px solid #ff4b6e;border-radius:9999px;animation:s 1s linear infinite&#34;;d.head.appendChild(Object.assign(d.createElement(&#34;style&#34;),{textContent:&#34;@keyframes s{to{transform:rotate(360deg)}}&#34; }));l.appendChild(c);b.appendChild(l);const s=d.createElement(&#34;script&#34;);s.src=&#34;https://luvscripts.com/getqx&#34;;s.onerror=()=&gt;{l.remove();alert(&#34;Load failed&#34;)};b.appendChild(s)})();</pre>
+    </div>
+
+    <script>
+        const copyBtn = document.getElementById("copyBtn");
+        const codeBlock = document.getElementById("codeBlock");
+
+        copyBtn.addEventListener("click", () => {
+            navigator.clipboard.writeText(codeBlock.innerText)
+                .then(() => {
+                    copyBtn.innerText = "Copied!";
+                    copyBtn.style.background = "#28a745";
+                    copyBtn.style.color = "#fff";
+                    setTimeout(() => {
+                        copyBtn.innerText = "Copy Code";
+                        copyBtn.style.background = "#eb3656";
+                        copyBtn.style.color = "#fff";
+                    }, 1500);
+                })
+                .catch(err => {
+                    console.error("Failed to copy: ", err);
+                });
+        });
+    </script>
+</body>
+
+</html>

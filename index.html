@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <title>MAGIC SCRIPTS</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(180deg, #e2e8f0, #f8fafc);
+            padding: 0 1.8rem;
+            padding-bottom: 1rem;
+            min-height: 100vh;
+        }
+
+        /* ===================== */
+        /*    SCRIPTS FOOTER     */
+        /* ===================== */
+
+        .scripts-footer {
+            margin-top: 40px;
+            padding-top: 24px;
+            border-top: 1px solid rgba(255, 0, 0, 0.08);
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 18px;
+        }
+
+        .footer-social {
+            display: flex;
+            justify-content: center;
+            margin-top: 3rem;
+            margin-bottom: 2rem;
+        }
+
+        .telegram-btn {
+            background: linear-gradient(135deg, #229ED9, #1d4ed8);
+            color: #fff;
+            padding: 10px 16px;
+            border-radius: 999px;
+            font-weight: 700;
+            text-decoration: none;
+            box-shadow: 0 8px 25px rgba(34, 158, 217, 0.5);
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .telegram-btn:hover {
+            transform: translateY(-2px) scale(1.05);
+            box-shadow: 0 12px 35px rgba(34, 158, 217, 0.7);
+        }
+
+        /* individual box */
+        .script-box {
+            background: #ffffff;
+            border: 1px solid rgba(0, 0, 0, 0.08);
+            border-radius: 14px;
+            padding: 18px 14px;
+            text-align: center;
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+            cursor: pointer;
+        }
+
+        .script-box:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+        }
+
+        /* logo */
+        .script-box img {
+            width: 42px;
+            height: 42px;
+            margin-bottom: 10px;
+        }
+
+        /* title */
+        .script-box h4 {
+            font-size: 0.95rem;
+            font-weight: 800;
+            color: #111827;
+            margin-bottom: 4px;
+            letter-spacing: 0.5px;
+        }
+
+        /* subtitle */
+        .script-box p {
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: #6b7280;
+            letter-spacing: 0.4px;
+        }
+
+        /* mobile spacing */
+        @media (max-width: 600px) {
+            .scripts-footer {
+                gap: 14px;
+            }
+        }
+
+
+        /* ===================== */
+        /*    COMING SOON CARD   */
+        /* ===================== */
+
+        .script-box.coming-soon {
+            background: repeating-linear-gradient(45deg,
+                    #f8fafc,
+                    #f8fafc 10px,
+                    #f1f5f9 10px,
+                    #f1f5f9 20px);
+            border-style: dashed;
+            opacity: 0.85;
+            cursor: default;
+        }
+
+        .script-box.coming-soon:hover {
+            transform: none;
+            box-shadow: none;
+        }
+
+        /* plus icon */
+        .soon-icon {
+            width: 42px;
+            height: 42px;
+            margin: 0 auto 10px;
+            border-radius: 50%;
+            border: 2px dashed #9ca3af;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #6b7280;
+        }
+
+        /* text tone */
+        .script-box.coming-soon h4 {
+            color: #374151;
+        }
+
+        .script-box.coming-soon p {
+            color: #6b7280;
+        }
+
+        .pulse {
+            animation: pulse 1.8s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.06);
+            }
+        }
+
+        .logo-pulse {
+            animation: pulseLogo 1.5s infinite ease-in-out;
+        }
+
+        @keyframes pulseLogo {
+
+            0%,
+            100% {
+                transform: scale(1)
+            }
+
+            50% {
+                transform: scale(1.12)
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div
+        style="font-size:2rem;font-weight:900;color:#000; text-shadow:0 5px 25px rgba(0,0,0,0.35);letter-spacing:1px;margin:2rem;text-align: center;">
+       MAGIC SCRIPTS
+    </div>
+
+    <!-- Logo -->
+    <div style="text-align: center;">
+        <img src="logo.png" style="width:120px;height:120px;"
+            class="logo-pulse">
+    </div>
+
+    <footer class="scripts-footer">
+        <div class="script-box qx_live">
+            <img src="qx.png" alt="logo">
+            <h4>SCRIPT # 1</h4>
+            <p>QX LIVE CODE</p>
+        </div>
+        <div class="script-box feed">
+            <img src="tg.webp" alt="logo">
+            <h4>SCRIPT # 2</h4>
+            <p>Android Feedbacks</p>
+        </div>
+        <div class="script-box ifeed">
+            <img src="tg.webp" alt="logo">
+            <h4>SCRIPT # 3</h4>
+            <p>iPhone Feedbacks</p>
+        </div>
+        <div class="script-box qx-bot">
+            <img src="qx-bot.webp" alt="logo">
+            <h4>SCRIPT # 4</h4>
+            <p>QX Partner Bot SS</p>
+        </div>
+        <div class="script-box qx-email">
+            <img src="qx.png" alt="logo">
+            <h4>SCRIPT # 5</h4>
+            <p>QX Withdrawal Email SS</p>
+        </div>
+        <div class="script-box bnb-email">
+            <img src="bnb.png" alt="logo">
+            <h4>SCRIPT # 6</h4>
+            <p>Binance Pay Email SS</p>
+        </div>
+        <!-- COMING SOON -->
+        <div class="script-box coming-soon">
+            <div class="soon-icon">+</div>
+            <h4>MORE SCRIPTS</h4>
+            <p>Coming Soon</p>
+        </div>
+    </footer>
+    <div class="footer-social">
+        <a href="https://t.me/Magic_Scripts" target="_blank" class="telegram-btn pulse">
+            🚀 Telegram @Magic_Scripts
+        </a>
+    </div>
+
+    <script>
+        // --- Open Live Script ---
+        document.querySelector(".qx_live").onclick = () => {
+            window.open("run.html", "_blank");
+        };
+        document.querySelector(".feed").onclick = () => {
+            window.open("https://ahmad-bhai-android-feed.vercel.app/", "_blank");
+        };
+        document.querySelector(".ifeed").onclick = () => {
+            window.open("https://ahmad-ifeedback.vercel.app/", "_blank");
+        };
+        document.querySelector(".qx-bot").onclick = () => {
+            window.open("https://ahmad-qx-bot.vercel.app/", "_blank");
+        };
+        document.querySelector(".qx-email").onclick = () => {
+            window.open("https://ahmad-email.vercel.app/", "_blank");
+        };
+        document.querySelector(".bnb-email").onclick = () => {
+            window.open("https://ahmad-email-bnb.vercel.app/", "_blank");
+        };
+    </script>
+</body>
+
+</html>
